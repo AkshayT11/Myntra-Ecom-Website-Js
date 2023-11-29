@@ -1,0 +1,422 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   position: fixed;
+   top: 0%;
+   box-shadow: 1px 3px 3px 4px rgb(246, 241, 241);
+   background-color: #fff;
+   align-items: center;
+
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img{
+    /* height: 80px; */
+    width: 200px;
+}
+
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-inline: 24px;
+    color: #000;
+}
+
+.searchBar{
+    display: flex;
+}
+.searchBar input{
+    width: 320px;
+    height: 15px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    font-size: 17px;
+}
+
+.searchBar i{
+    margin-left: -28px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+
+}
+.icons i{
+    font-size: 26px;
+
+}
+/* Main section */
+.main{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(237, 158, 102);
+    margin-top: 80px;
+}
+.mainText{
+    margin-top: 100px;
+    margin-left: 35px;
+
+}
+.mainText h1{
+    font-size: 4.375rem;
+}
+.mainText p{
+    width: 60%;
+    margin-top: 23px;
+}
+.mainText button{
+    margin-top: 25px;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    font-size: 21px;
+    border: none;
+}
+.mainText button:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.main img{
+    width: 330px;
+}
+
+/* Men Cards  */
+
+.mens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.head{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.womens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 310px;
+    margin-top: 23px;
+    margin-inline: 22px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+.card p{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* Slides */
+
+.slides{
+    width: 1200px;
+    height: 400px;
+    background-color: #000;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.slideCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transition: all 1.5s ease;
+}
+.slideCard img{
+    width: 300px;
+    height: 300px;
+    margin-inline: 22px;
+    margin-top: 25px;
+
+}
+/* Blogs section */
+
+.blogs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 40px; */
+}
+.blogs .blogCard{
+    width: 300px;
+    margin-top: 23px;
+    margin-inline: 25px;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.blogCard img{
+    width: 100%;
+    height: 310px;
+}
+.blogCard h3{
+    margin-top: 10px;
+    padding: 5px 3px;
+}
+.blogCard a{
+    padding: 7px 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    font-size:18px;
+    border-radius: 10px;
+
+}
+
+/* footer styling */
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
+    padding: 64px;
+    background-color: cadetblue;
+}
+.text p{
+    margin-top: 15px;
+    font-size: 17px;
+}
+.text h3{
+    font-size: 23px;
+}
+
+/* this from JS */
+
+.cardDetail{
+    display: flex;
+    gap: 28px;
+    padding: 22px;
+}
+.cardDetail h2{
+    margin-top: 22px;
+}
+.cardDetail p{
+    margin-top: 22px;
+}
+.cardDetail h2{
+    margin-top: 22px;
+}
+
+.cardDetail button{
+    padding: 10px 16px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    border-radius: 12px;
+    margin: 20px 5px;
+
+}
+.cardDetail a{
+    padding: 12px 18px;
+    background-color: gray;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+
+}
+
+.cardDetail img{
+    width: 400px;
+    height: 500px;
+
+}
+
+#bar{
+    display: none;
+    
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1100px){
+    ul{
+        display: none;
+    }
+    ul.menu_active{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #30363f;
+        color: #fff;
+        position: absolute;
+        top: 80px;
+        padding: 20px 0;
+        left: 0;
+        gap: 25px;
+        width: 100%;
+    }
+    ul.menu_active a{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .searchBar{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    #bar{
+        display: block;
+        font-size: 26px;
+    }
+    .slides{
+        width: 90%;
+    }
+    .slideCard img{
+        width: 20%;
+    }
+
+
+}
+
+@media screen and (max-width:600px){
+    .slideCard img{
+        height: 180px;
+    }
+    .slides{
+        height: 250px;
+    }
+    .main img{
+        width: 80%;
+    }
+    .mainText h1{
+        font-size: 40px;
+    }
+    .mainText{
+        margin-top: 40px;
+        margin-left: 25px;
+        padding-bottom: 20px;
+    
+    }
+    
+
+    .footer{
+       margin-top: 30px;
+        padding: 50px;
+        background-color: cadetblue;
+    }
+    .text p{
+        margin-top: 15px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .text h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:960px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+    .main p{
+        width: 100%;
+    }
+    .mainText{
+        margin-top: 40px;
+        margin-left: 25px;
+        padding-bottom: 20px;
+    
+    }
+}
+
+@media screen and (max-width:700px){
+    .cardDetail{
+        flex-direction: column;
+        text-align: center ;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardDetail img{
+        width: 70%;
+    }
+    .card p{
+        padding: 0;
+        font-weight: 500;
+        font-size: 17px;
+        margin-top: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
